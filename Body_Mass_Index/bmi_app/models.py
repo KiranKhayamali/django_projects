@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class BMIHistory(models.Model):
-    user = User.ForeignKey(User, on_delete = models.CASCADE)
+    # user = User.ForeignKey(User, on_delete = models.CASCADE)
     bmi = models.FloatField()
     date = models.DateTimeField(auto_now_add = True)
 
